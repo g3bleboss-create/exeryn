@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐄𝐱𝐄_𝐫𝐘𝐧</title>
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybWNycjVtcTBtdndoMDlsdnR3cXZ5dnUzaHQ4Nm5sYXh3Ym5pbHJ5cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WOb8EeFziTQNE02WXs/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: 1.2s ease;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 0 0 10px black;
+}
+
+/* LOGOS */
+.icons img {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    filter: drop-shadow(0 0 6px black);
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 12px;
+}
+
+.icons img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 8px white);
+}
+
+.spotify-player {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.spotify-player iframe {
+    max-width: 350px;
+}
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>𝐄𝐱𝐄_𝐫𝐘𝐧</h1>
+
+    <div class="icons">
+      <a href="https://www.instagram.com/ryn_6z20?igsh=MW9lNWs3ZmdoaW54Ng%3D%3D&utm_source=qr" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+
+      <a href="https://www.tiktok.com/@ryn_6zzz?_r=1&_t=ZG-91ZQtohnK0f" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+
+      <a href="https://open.spotify.com/user/31swtcazhm25zjzalr6hp5zaixaq?si=WmDkcNSnRHuWZPSjwOFazA" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify">
+      </a>
+    </div>
+
+    <!-- LECTEUR SPOTIFY -->
+    <div class="spotify-player">
+      <iframe 
+        style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/0K2fUhtLKjPn3ZlljVszWr?utm_source=generator" 
+        width="100%" 
+        height="352" 
+        frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <script>
+window.onload = () => {
+    const content = document.querySelector('.content');
+    content.style.opacity = "1";
+};
+  </script>
+</body>
+</html>
